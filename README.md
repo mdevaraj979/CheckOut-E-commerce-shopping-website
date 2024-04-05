@@ -1,5 +1,5 @@
 1. Introduction:
-The project aims to develop an e-commerce website for online shopping using HTML, CSS, and JavaScript. The website will provide users with a platform to browse products, add them to their cart, and make purchases securely.
+The project aims to develop an e-commerce website for online shopping using HTML, CSS, and JavaScript. The website will provide users with a platform to browse products, add them to their cart.Its a static web page.
 
 2. Features:
 User Authentication: Users can create accounts, log in, and log out.

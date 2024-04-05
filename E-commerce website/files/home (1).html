@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lan="en" and dir="Itr">
+<head>
+     <meta charset="utf-8">
+     <title> Home page</title>
+     <link rel="stylesheet" href="homepage.css">
+     <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<div class="navbar">
+        <div class="logo">
+            <img src="flogo.jpeg" class="chk">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="categoriespage.html"><div class="dropdown">
+                  <button class="dropbtn">CATEGORIES</button>
+                  <div class="dropdown-content">
+                    <a href="groceries.html">GROCERY</a>
+                    <a href="electronics (1).html">ELECTRONICS</a>
+                    <a href="fashion.html">FASHION</a>
+                  </div>
+                </div></a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="carttt.html">CART</a></li>
+            </ul>
+        </nav>
+    </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/G/31/img22/Fashion/Event/WRS22Dec/Eventpage/EOSS/REC/Headers/MOB/PC._CB617653908_.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61vioLzzNxL._SX3000_.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://media.istockphoto.com/id/516793074/vector/grocery-shopping.jpg?s=612x612&w=0&k=20&c=Lt1gxXB9ZBH-Hg70UnvAM_zOQJQreC-syWX-5xSeAUk="style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div><br><br><br>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+        background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/white-on-white-paper-light-background-vector-website-template_G1WzLxvu_SB_PM.jpg');
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        color:brown;
+        font-family: Segoe UI Semibold;
+    }
+    .column {
+    background-color: rgb(5, 88, 99);
+    width:370px;
+    margin:10px;
+    border-radius: 20px;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    img {
+        height:300px;
+        margin-bottom:15px;
+    }
+    .column a{
+        background-color:beige;
+        color:black;
+        padding:15px 20px;
+        display:block;
+        text-align:center;
+        margin:30px 30px;
+    }
+    .column:hover{
+        background-color: black;
+        cursor:pointer;
+    }
+   
